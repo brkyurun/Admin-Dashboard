@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+:root {
+  --sidebar-bg-clr: #0891b2;
+  --sidebar-text-svg-clr: #f8fafc;
+  --sidebar-hover-clr: #67e8f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* sidebar styles */
+aside {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  min-width: 300px;
+  background-color: var(--sidebar-bg-clr);
+}
+/* logo styles */
+.logo {
+  margin: 15px 0px 35px 0px;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+}
+
+.logo svg {
+  justify-self: center;
+  height: 60px;
+  width: 60px;
+  color: var(--sidebar-text-svg-clr);
+}
+
+.logo a {
+  color: var(--sidebar-text-svg-clr);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+/* sidebar links */
+.user-links,
+.other-links {
+  margin-left: 15px;
+  display: grid;
+  gap: 15px 0px;
+}
+
+.other-links {
+  margin-top: 65px;
+}
+
+.user-link,
+.other-link {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 2px 18px;
+}
+
+.user-link svg,
+.other-link svg {
+  justify-self: center;
+  color: var(--sidebar-text-svg-clr);
+  height: 30px;
+  width: 30px;
+}
+
+.user-link a,
+.other-link a {
+  color: var(--sidebar-text-svg-clr);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: all ease 0.3s;
+}
+
+.user-link a:hover,
+.other-link a:hover {
+  color: white;
+  box-shadow: 0px 2.5px var(--sidebar-hover-clr);
+}
