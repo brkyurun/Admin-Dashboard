@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./img/water.png" type="image/png" />
     <title>Splotch Admin Dashboard</title>
   </head>
   <body>
@@ -107,12 +108,14 @@
     <main>
       <div class="top-bar">
         <div class="search-bar-container">
-          <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
-            />
-          </svg>
+          <label for="search-bar">
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+              />
+            </svg>
+          </label>
           <input type="search" id="search-bar" name="search_query" />
         </div>
         <div class="user-account">
@@ -133,10 +136,10 @@
         <div class="user-greeting">
           <div class="user-photo-large">
             <img src="./img/mary-baker-l.svg" alt="" />
-            <div class="user-greeting-texts">
-              <p>Hi there,</p>
-              <p>Mary Baker (@mary)</p>
-            </div>
+          </div>
+          <div class="user-greeting-texts">
+            <p>Hi there,</p>
+            <h2>Mary Baker (@mary)</h2>
           </div>
         </div>
         <div class="user-actions">
@@ -145,7 +148,343 @@
           <button type="button" class="user-btn">Share</button>
         </div>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <h2 class="projects-title">Your Projects</h2>
+        <div class="projects-container">
+          <div class="card">
+            <div class="card-text">
+              <h3>Super Cool Project</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores vel beatae odit, consequuntur dolorem totam?
+              </p>
+            </div>
+            <div class="card-buttons">
+              <div class="favorite">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="watch">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="share">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>Less Cool Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis doloribus deserunt consequatur sed aliquam perferendis
+                ipsa illo quod illum, dolores expedita totam ducimus maiores
+                perspiciatis explicabo.
+              </p>
+            </div>
+            <div class="card-buttons">
+              <div class="favorite">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="watch">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="share">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>Impossible App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae consequatur veniam voluptates accusantium molestias!
+              </p>
+            </div>
+            <div class="card-buttons">
+              <div class="favorite">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="watch">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="share">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>Easy Peasy App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nesciunt officia accusantium fugit odit consequatur! Qui
+                nesciunt magni deleniti ipsam accusantium ullam sint!
+              </p>
+            </div>
+            <div class="card-buttons">
+              <div class="favorite">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="watch">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="share">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>Ad Blocker</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Excepturi est natus corrupti. Reiciendis saepe vero ratione
+                quibusdam optio?
+              </p>
+            </div>
+            <div class="card-buttons">
+              <div class="favorite">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="watch">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="share">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h3>Money Maker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                ipsum, impedit voluptates numquam iusto, voluptatibus, vero
+                dolores autem quod possimus alias! Odio, dolorum?
+              </p>
+            </div>
+            <div class="card-buttons">
+              <div class="favorite">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="watch">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="share">
+                <button type="button">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12S8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5S19.66 2 18 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12S4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.34C15.11 18.55 15.08 18.77 15.08 19C15.08 20.61 16.39 21.91 18 21.91S20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08M18 4C18.55 4 19 4.45 19 5S18.55 6 18 6 17 5.55 17 5 17.45 4 18 4M6 13C5.45 13 5 12.55 5 12S5.45 11 6 11 7 11.45 7 12 6.55 13 6 13M18 20C17.45 20 17 19.55 17 19S17.45 18 18 18 19 18.45 19 19 18.55 20 18 20Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="announcements-title">Announcements</h2>
+        <div class="announcements">
+          <div class="announcement-card">
+            <div class="announcement">
+              <h4>Site Maintenance</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                odit porro magni labore?...
+              </p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <h4>Community Share Day</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                quibusdam impedit a fuga...
+              </p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <h4>Updated Privacy Policy</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                voluptates qui assumenda molestiae iusto ducimus?...
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="trending-title">Trending</h2>
+        <div class="trending">
+          <div class="trending-card">
+            <div class="trending-user">
+              <div class="user-profile-photo">
+                <img
+                  src="./img/users/helen-keller.svg"
+                  alt="Margaret Brent's photo."
+                />
+              </div>
+              <div class="user-profile-info">
+                <p class="user-profile-tag"><a href="#">@hkeller</a></p>
+                <p class="user-profile-name">Helen Keller</p>
+              </div>
+            </div>
+            <div class="trending-user">
+              <div class="user-profile-photo">
+                <img
+                  src="./img/users/jane-johnston.svg"
+                  alt="Margaret Brent's photo."
+                />
+              </div>
+              <div class="user-profile-info">
+                <p class="user-profile-tag"><a href="#">@janejohnston</a></p>
+                <p class="user-profile-name">Jane Johnston</p>
+              </div>
+            </div>
+            <div class="trending-user">
+              <div class="user-profile-photo">
+                <img
+                  src="./img/users/margaret-brent.svg"
+                  alt="Margaret Brent's photo."
+                />
+              </div>
+              <div class="user-profile-info">
+                <p class="user-profile-tag"><a href="#">@margie</a></p>
+                <p class="user-profile-name">Margaret Brent</p>
+              </div>
+            </div>
+            <div class="trending-user">
+              <div class="user-profile-photo">
+                <img
+                  src="./img/users/rosa-parks.svg"
+                  alt="Margaret Brent's photo."
+                />
+              </div>
+              <div class="user-profile-info">
+                <p class="user-profile-tag"><a href="#">@parksrosa</a></p>
+                <p class="user-profile-name">Rosa Parks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
